@@ -94,7 +94,7 @@ class StaffGradedAssignmentXBlock(
         default=_("Staff Graded Assignment"),
         scope=Scope.settings,
         help=_(
-            "This name appears in the horizontal navigation at the top of " "the page."
+            "This name appears in the horizontal navigation at the top of the page."
         ),
     )
 
@@ -119,7 +119,7 @@ class StaffGradedAssignmentXBlock(
     staff_score = Integer(
         display_name=_("Score assigned by non-instructor staff"),
         help=_(
-            "Score will need to be approved by instructor before being " "published."
+            "Score will need to be approved by instructor before being published."
         ),
         default=None,
         scope=Scope.settings,
@@ -607,7 +607,7 @@ class StaffGradedAssignmentXBlock(
         # this method only exists to provide context=None for backwards compat
         return super().studio_view(context)
 
-    def clear_student_state(self, *args, **kwargs):
+    def clear_student_state(self, *args, **kwargs): #pylint: disable=unused-argument
         """
         For a given user, clears submissions and uploaded files for this XBlock.
 
