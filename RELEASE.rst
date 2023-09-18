@@ -1,6 +1,11 @@
 Release Notes
 =============
 
+Version 0.24.0 (Unreleased)
+--------------
+
+- feat: add support for Django 4.2
+
 Version 0.23.0 (Released September 15, 2023)
 --------------
 
